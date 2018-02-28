@@ -3,12 +3,13 @@ body, html {
   padding: 0;
   width: 100%;
   height: 100%;
+  overflow: auto;
 }
 
 body {
   font-family: Roboto;
   font-size: 12px;
-  /* font-weight: 300;   IT DOESN'T WORK HERE, WHY? */
+  /* font-weight: 300;  WHY IT DOESN'T WORK HERE?*/
   color: #8a8a8a;
   line-height: 1.4;
 }
@@ -82,6 +83,10 @@ header.container {
 
 main.container {
   padding-top: 2%;
+}
+
+picture, img {
+  width: 100%;
 }
 
 /* ---------- FEATURED WORKS - */
