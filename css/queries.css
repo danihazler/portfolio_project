@@ -47,6 +47,10 @@
   .work {
     width: 48%;
   }
+
+  .work-img img {
+    width: 100%; 
+  }
 }
 
 @media screen and (max-width: 680px) {
@@ -74,6 +78,10 @@
   .work-description a {
     font-size: .8em;
     padding: 5px; /* to turn more "clickable" */
+  }
+
+  footer {
+    height: 9vh;
   }
 }
 

@@ -132,6 +132,10 @@ picture {
   padding-bottom: 3%;
 }
 
+.work-img img {
+  width: 300px; 
+}
+
 .work-description {
   padding-top: 4%;
 }
