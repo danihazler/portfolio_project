@@ -3,13 +3,19 @@
     padding-left: 2%;
     padding-right: 2%;
   }
+
   main.container {
     padding-top: 0;
   }
 
+  .info,
   .featured-works {
     padding-left: 2%;
     padding-right: 2%;
+  }
+
+  .social a:nth-child(2) {
+    padding: 0;
   }
 
   .work {
@@ -22,6 +28,24 @@
 
   .work-description h3 {
     font-size: 1.5em;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .info.flex {
+    flex-direction: column;
+  }
+
+  .social {
+    padding-top: 3%;
+  }
+
+  .social img {
+    width: 80px;
+  }
+
+  .work {
+    width: 48%;
   }
 }
 
@@ -38,6 +62,7 @@
     font-size: 1.5em;
   }
 
+  .info h2,
   .featured-works h2 {
     font-size: 2em;
   }
@@ -66,6 +91,11 @@
     text-align: center;
   }
 
+  .social img {
+    width: 60px;
+  }
+
+  .info h2,
   .featured-works h2 {
     text-align: center;
   }

@@ -2,8 +2,7 @@ body, html {
   margin: 0;
   padding: 0;
   width: 100%;
-  height: 100%;
-  overflow: auto;
+  min-height: 100%;
 }
 
 body {
@@ -12,27 +11,6 @@ body {
   /* font-weight: 300;  WHY IT DOESN'T WORK HERE?*/
   color: #8a8a8a;
   line-height: 1.4;
-}
-
-.container {
-  max-width: 950px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.flex {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.title h1,
-.title h2,
-.featured-works h2,
-.work-description h3,
-.work-description a {
-  font-weight: 300;
 }
 
 /* ---- SIMPLE RESETING ----- */
@@ -50,9 +28,38 @@ ul {
   margin: 0;
 }
 
+/* ---- COMMON ----- */
+.container {
+  max-width: 950px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.title h1,
+.title h2,
+.about h2,
+.featured-works h2,
+.work-description h3,
+.work-description a {
+  font-weight: 300;
+}
+
+.about h2,
+.featured-works h2 {
+  text-align: left;
+  padding-bottom: 2%;
+  font-size: 2.8em;
+}
+
 /* ------------- HEADER ----- */
 /* -------------------------- */
-
 header.container {
   border-bottom: 4px solid #f2f2f2;
   padding: 2% 0;
@@ -80,27 +87,49 @@ header.container {
 
 /* --------------- MAIN ----- */
 /* -------------------------- */
-
 main.container {
   padding-top: 2%;
 }
 
-picture, img {
+picture {
   width: 100%;
 }
 
-/* ---------- FEATURED WORKS - */
+/* ------------------ ABOUT - */
+/* -------------------------- */
+.info {
+  padding-top: 5%;
+}
+
+.about p {
+  font-size: 1.2em;
+  max-width: 580px;
+  text-align: justify;
+  text-indent: 3%;
+}
+
+/* ----------------- SOCIAL - */
 /* -------------------------- */
 
+.social {
+  padding-top: 55px;
+}
+
+.social a:nth-child(2) {
+  padding-left: 4%;
+  padding-right: 4%;
+}
+
+
+/* ---------- FEATURED WORKS - */
+/* -------------------------- */
 .featured-works {
   padding-top: 5%;
   margin-bottom: 7%;
 }
 
-.featured-works h2 {
-  text-align: left;
-  padding-bottom: 2%;
-  font-size: 2.8em;
+.work {
+  padding-bottom: 3%;
 }
 
 .work-description {
