@@ -115,10 +115,10 @@ picture {
   padding-top: 55px;
 }
 
-.social a:nth-child(2) {
-  padding-left: 4%;
-  padding-right: 4%;
-}
+.social a:nth-child(2) img {
+  padding-left: 10%;
+  padding-right: 10%;
+} /*target the img to avoid a small bug when resizeing the page */
 
 
 /* ---------- FEATURED WORKS - */
@@ -133,7 +133,7 @@ picture {
 }
 
 .work-img img {
-  width: 300px; 
+  width: 300px;
 }
 
 .work-description {
